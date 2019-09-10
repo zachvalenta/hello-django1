@@ -19,6 +19,9 @@ dj:
 index:
 	http --print=Hh http://127.0.0.1:8000
 
+gui:
+	open http://localhost:8000/
+
 freeze:
 	pip freeze > requirements.txt
 
