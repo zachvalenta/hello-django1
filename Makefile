@@ -5,6 +5,8 @@ help:
 	@echo "🎸 DJANGO"
 	@echo
 	@echo "dj:          run dev server"
+	@echo "index:       hit index page"
+	@echo "gui:         open site in browser"
 	@echo
 	@echo "📦 DEPENDENCIES"
 	@echo
@@ -43,4 +45,3 @@ purge:
 	@echo
 	rm pkgs-to-rm.txt
 	@echo
-
