@@ -7,6 +7,7 @@ help:
 	@echo "dj:          run dev server"
 	@echo "index:       index page health check"
 	@echo "admin:       open admin"
+	@echo "db:       	view db with litecli"
 	@echo "migration:   create migration"
 	@echo "migrate:     apply migration"
 	@echo
@@ -25,6 +26,9 @@ index:
 
 admin:
 	open http://localhost:8000/admin
+
+db:
+	litecli db.sqlite3
 
 migration:
 	python manage.py makemigrations
