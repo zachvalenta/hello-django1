@@ -1,4 +1,5 @@
 {% load staticfiles %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +7,17 @@
     <link rel="stylesheet" href="{% static 'styles.css' %}" />
 </head>
 <body>
+    
+    <!-- nav bc ul add left margin -->
+    <nav class="nav-links">
+        <li><a href="{% url 'index' %}">index</a></li>
+        <li><a href="{% url 'about' %}">about</a></li>
+        <li><a href="{% url 'contact' %}">contact</a></li>
+    </nav>
+
+    <div class="content">
     {% block content %} {% endblock %} 
+    </div>
+    
 </body>
 </html>

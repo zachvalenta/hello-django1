@@ -1,3 +1,26 @@
 body {
     background-color: aquamarine;
 }
+
+ul {
+    list-style-type: none;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.nav-links li {
+    padding: 10px;
+    list-style-type: none;
+}
+
+.nav-links li:first-of-type {
+    padding-left: 0px;
+}
+
+.content {
+    margin-top: 50px;
+}
