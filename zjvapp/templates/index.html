@@ -3,5 +3,12 @@
 {% block title %} {{ block.super }} - index {% endblock %} 
 
 {% block content %} 
-    index page
+
+    <h2>index page</h2>
+
+    {% for thing in things %} 
+        <p>{{ thing.name }}</p>
+        <p>{{ thing.description }}</p>
+    {% endfor %} 
+    
 {% endblock %} 
