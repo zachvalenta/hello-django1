@@ -7,7 +7,7 @@ help:
 	@echo "dj:          run dev server"
 	@echo "index:       index page health check"
 	@echo "admin:       open admin"
-	@echo "db:       	view db with litecli"
+	@echo "db:          view db with litecli"
 	@echo "migration:   create migration"
 	@echo "migrate:     apply migration"
 	@echo
