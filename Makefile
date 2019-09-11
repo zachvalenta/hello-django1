@@ -5,8 +5,10 @@ help:
 	@echo "🎸 DJANGO"
 	@echo
 	@echo "dj:          run dev server"
-	@echo "index:       hit index page"
-	@echo "gui:         open site in browser"
+	@echo "index:       index page health check"
+	@echo "admin:       open admin"
+	@echo "migration:   create migration"
+	@echo "migrate:     apply migration"
 	@echo
 	@echo "📦 DEPENDENCIES"
 	@echo
@@ -21,8 +23,14 @@ dj:
 index:
 	http --print=Hh http://127.0.0.1:8000
 
-gui:
-	open http://localhost:8000/
+admin:
+	open http://localhost:8000/admin
+
+migration:
+	python manage.py makemigrations
+
+migrate:
+	python manage.py migrate
 
 freeze:
 	pip freeze > requirements.txt
