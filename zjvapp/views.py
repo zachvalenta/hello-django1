@@ -11,3 +11,8 @@ def index(request):
 def thing_detail(request, slug):
     thing = Thing.objects.get(slug=slug)
     return render(request, 'thing_detail.html', context={'thing':thing})
+
+
+def thing_edit(request, slug):
+    thing = Thing.objects.get(slug=slug)
+    return render(request, 'thing_edit.html', context={'thing':thing})
