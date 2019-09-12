@@ -7,8 +7,9 @@
     <h2>index page</h2>
 
     {% for thing in things %} 
-        <p>{{ thing.name }}</p>
-        <p>{{ thing.description }}</p>
+    <a href="{% url 'thing_detail' slug=thing.slug %}">
+        {{ thing.name }}</p>
+    </a>
     {% endfor %} 
     
 {% endblock %} 
