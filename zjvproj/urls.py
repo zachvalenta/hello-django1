@@ -5,7 +5,7 @@ from django.views.generic import TemplateView
 from zjvapp import views
 
 urlpatterns = [
-    path('', views.index, name='index'),
+    path('', views.index, name='index'),  # `home` in Osborn 1 4.13
     path('about/', TemplateView.as_view(template_name='about.html'), name='about'),
     path('contact/', TemplateView.as_view(template_name='contact.html'), name='contact'),
     path('thing/<slug>', views.thing_detail, name='thing_detail'),
