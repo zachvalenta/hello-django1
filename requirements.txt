@@ -4,6 +4,7 @@ cli-helpers==1.2.1
 Click==7.0
 configobj==5.0.6
 Django==2.0.10
+django-registration-redux==2.6
 httpie==1.0.3
 idna==2.8
 litecli==1.1.0
