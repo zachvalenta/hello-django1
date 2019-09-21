@@ -8,15 +8,26 @@
 </head>
 <body>
     
-    <!-- nav bc ul add left margin -->
     <nav class="nav-links">
+
+        <!-- main -->
         <li><a href="{% url 'index' %}">index</a></li>
         <li><a href="{% url 'about' %}">about</a></li>
         <li><a href="{% url 'contact' %}">contact</a></li>
+
+        <!-- auth -->
+        {% if user.is_authenticated %}
+        <li><a href="{% url 'auth_logout' %}">logout</a></li>
+        {% else %}
+        <li><a href="{% url 'auth_login' %}">login</a></li>
+        <!-- won't render unless inside if and/or behind user.is_authenticated --> 
+        <li><a href="{% url 'registration_register' %}">register</a></li> 
+        {% endif %}
+
     </nav>
 
     <div class="content">
-    {% block content %} {% endblock %} 
+        {% block content %} {% endblock %} 
     </div>
     
 </body>
