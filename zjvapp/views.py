@@ -18,9 +18,10 @@ def thing_edit(request, slug):
     thing = Thing.objects.get(slug=slug)
     if request.method == 'GET':
         form = ThingForm(instance=thing)
+        # does thing really need to be in this template?
         return render(request, 'thing_edit.html', context={'thing':thing, 'form': form})
     if request.method == 'POST':
         form = ThingForm(data=request.POST, instance=thing)
-        if form.is_valid():  # necessary? paradigm? why not try/catch?
+        if form.is_valid():
             form.save()
             return redirect('thing_detail', slug=thing.slug)
