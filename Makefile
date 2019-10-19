@@ -5,7 +5,8 @@ help:
 	@echo "🎸 DJANGO"
 	@echo
 	@echo "dj:          run dev server"
-	@echo "index:       index page health check"
+	@echo "health:      index page health check"
+	@echo "index:       open index"
 	@echo "admin:       open admin"
 	@echo "db:          view db with litecli"
 	@echo "migration:   create migration"
@@ -21,8 +22,11 @@ help:
 dj:
 	python manage.py runserver
 
-index:
+health:
 	http --print=Hh http://127.0.0.1:8000
+
+index:
+	open http://127.0.0.1:8000
 
 admin:
 	open http://localhost:8000/admin
