@@ -24,7 +24,6 @@ urlpatterns = [
     path('accounts/password/reset/', password_reset, name='password_reset'),  # prompt email to send reset link
     path('accounts/password/done/', password_reset_done, name='password_reset_done'),  # ack link sent
     path('accounts/password/reset/<uidb64>/<token>', password_reset_confirm, name='password_reset_confirm'),  # input new pw
-    path('accounts/password/complete/', password_reset_complete,name='password_reset_complete'),  # ack new
 
     # admin
     path('admin/', admin.site.urls),
