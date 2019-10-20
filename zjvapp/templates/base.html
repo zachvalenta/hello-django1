@@ -20,7 +20,6 @@
         <li><a href="{% url 'auth_logout' %}">logout</a></li>
         {% else %}
         <li><a href="{% url 'auth_login' %}">login</a></li>
-        <!-- won't render unless inside if and/or behind user.is_authenticated --> 
         <li><a href="{% url 'registration_register' %}">register</a></li> 
         {% endif %}
 
