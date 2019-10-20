@@ -18,6 +18,7 @@
         <!-- auth -->
         {% if user.is_authenticated %}
         <li><a href="{% url 'auth_logout' %}">logout</a></li>
+        <li><a href="{% url 'password_change' %}">change password</a></li>
         {% else %}
         <li><a href="{% url 'auth_login' %}">login</a></li>
         <li><a href="{% url 'registration_register' %}">register</a></li> 
