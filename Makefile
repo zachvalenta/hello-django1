@@ -5,7 +5,7 @@ help:
 	@echo "🎸 DJANGO"
 	@echo
 	@echo "dj:          run dev server"
-	@echo "health:      index page health check"
+	@echo "test:        run unit tests"
 	@echo "index:       open index"
 	@echo "admin:       open admin"
 	@echo "db:          view db with litecli"
@@ -22,8 +22,8 @@ help:
 dj:
 	python manage.py runserver
 
-health:
-	http --print=Hh http://127.0.0.1:8000
+test:
+	python manage.py test
 
 index:
 	open http://127.0.0.1:8000
