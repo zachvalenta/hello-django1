@@ -3,7 +3,7 @@ chardet==3.0.4
 cli-helpers==1.2.1
 Click==7.0
 configobj==5.0.9
-Django==4.2.25
+Django==4.2.26
 django-registration-redux==2.6
 httpie==3.2.3
 idna==3.7
