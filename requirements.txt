@@ -9,7 +9,7 @@ httpie==3.2.3
 idna==3.7
 litecli==1.1.0
 prompt-toolkit==2.0.9
-Pygments==2.15.0
+Pygments==2.20.0
 pytz==2019.2
 requests==2.32.4
 six==1.12.0
