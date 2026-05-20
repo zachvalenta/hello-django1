@@ -6,7 +6,7 @@ configobj==5.0.9
 Django==4.2.30
 django-registration-redux==2.6
 httpie==3.2.3
-idna==3.7
+idna==3.15
 litecli==1.1.0
 prompt-toolkit==2.0.9
 Pygments==2.20.0
